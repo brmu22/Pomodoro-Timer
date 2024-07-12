@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/2a8d315779.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1 class="title">Study w/ Me! Pomodoro Timer</h1>
+  <div class="timer-container">
+    <div class="timer" id="timer">25:00</div>
+    <div class="settings-container">
+      <button id="settingsButton"><i class="fas fa-cog fa-xl"></i></button>
+      <div class="settings-popup" id="settingsPopup">
+        <div class="popup-header">
+          <span onclick="closePopup()" class="close-btn">&times;</span>
+        </div>
+        <ul>
+          <li onclick="changeBackground('gradient1')">Aura</li>
+          <li onclick="changeBackground('gradient2')">Loaded Sunset</li>
+          <li onclick="changeBackground('gradient3')">Cotton Candy</li>
+          <li onclick="changeBackground('gradient4')">Beach</li>
+          <li onclick="changeBackground('gradient5')">Night</li>
+          <li onclick="changeBackground('default')">Reset</li>
+        </ul>
+        <div class="timer-input">
+          <label for="timerInput">Set Timer:</label>
+          <input type="text" id="timerInput" placeholder="Enter time in minutes">
+          <button onclick="setCustomTimer()">Set</button>
+        </div>
+      </div>
+    </div>
+    <div class="buttons-container">
+      <button id="startButton">Start</button>
+      <button id="stopButton">Stop</button>
+      <button id="resetButton"><i class="fas fa-redo-alt fa-2xl"></i></button>
+    </div>
+  </div> 
+    <!-- Spotify player -->
+    <div id="spotify-player" style="position: fixed; bottom: 20px; left: 20px;">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIfeeY1Nyg89M?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
